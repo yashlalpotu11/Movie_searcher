@@ -1,0 +1,26 @@
+
+.flexb {
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+@keyframes spin{
+    0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+  }
+.nb-spinner {
+    width: 75px;
+    height: 75px;
+    margin: 0;
+    background: transparent;
+    border-top: 4px solid #009688;
+    border-right: 4px solid transparent;
+    border-radius: 50%;
+    animation: 1s spin linear infinite;
+}
+  
